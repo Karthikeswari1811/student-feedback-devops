@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Responses</title>
+</head>
+
+<body>
+
+<h1>Student Feedback</h1>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Feedback</th>
+    </tr>
+
+    {% for response in responses %}
+
+    <tr>
+        <td>{{ response[0] }}</td>
+        <td>{{ response[1] }}</td>
+        <td>{{ response[2] }}</td>
+        <td>{{ response[3] }}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+<br>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>
